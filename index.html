@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<title>CSS テスト</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="index.css" />
+</head>
+<body>
+	<div class="color-imm">
+		<span>color: red;</span>
+	</div>
+	<div class="color-var">
+		<span>color: var(--red);</span>
+	</div>
+	<div class="all-unset color-imm">
+		<span>all: unset;</span>
+		<span>color: red;</span>
+	</div>
+	<div class="all-unset color-var">
+		<span>all: unset;</span>
+		<span>color: var(--red);</span>
+	</div>
+	<div class="all-unset text-fill-indirect color-imm">
+		<span>all: unset;</span>
+		<span>-webkit-text-fill-color: currentColor;</span>
+		<span>color: red;</span>
+	</div>
+	<div class="all-unset text-fill-indirect color-var">
+		<span>all: unset;</span>
+		<span>-webkit-text-fill-color: currentColor;</span>
+		<span>color: var(--red);</span>
+	</div>
+	<div class="all-unset text-fill-direct color-imm">
+		<span>all: unset;</span>
+		<span>-webkit-text-fill-color: green;</span>
+		<span>color: red;</span>
+	</div>
+	<div class="all-unset text-fill-direct color-var">
+		<span>all: unset;</span>
+		<span>-webkit-text-fill-color: green;</span>
+		<span>color: var(--red);</span>
+	</div>
+	<div class="border-physical">
+		<span>border-bottom: 5px solid red;</span>
+	</div>
+	<div class="border-logical">
+		<span>border-block-end: 5px solid red;</span>
+	</div>
+</body>
+</html>
