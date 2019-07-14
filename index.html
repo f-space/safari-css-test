@@ -41,11 +41,17 @@
 		<span>-webkit-text-fill-color: green;</span>
 		<span>color: var(--red);</span>
 	</div>
-	<div class="border-physical">
-		<span>border-bottom: 5px solid red;</span>
+	<div class="border-physical-imm">
+		<span>border-top: 5px solid red;</span>
 	</div>
-	<div class="border-logical">
-		<span>border-block-end: 5px solid red;</span>
+	<div class="border-logical-imm">
+		<span>border-block-start: 5px solid red;</span>
+	</div>
+	<div class="border-physical-var">
+		<span>border-top: 5px solid var(--red);</span>
+	</div>
+	<div class="border-logical-var">
+		<span>border-block-start: 5px solid var(--red);</span>
 	</div>
 </body>
 </html>
